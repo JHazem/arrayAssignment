@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class HomeArray {
 
 	public static void main(String[] args) {
-		 
+		 question10();
 	}
 	
 						// 303.3.2 Practice Assignment -Array
@@ -129,23 +129,25 @@ public class HomeArray {
 			
 			}
 		}
-	
-	
-
+	 
 	}
 	
-//	public static void question8() {
+	public static void question8() {
 
 	/* 8
 	Write a program that creates a String array of 5 elements 
 	and swaps the first element with the middle element without creating a new array.
 	 */
 		
-//		int[] arr8 = {5, 6, 11, 23, 34};
-//		int temp = arr8[0];
-//		
-//		
-//		}
+		int[] arr8 = {5, 6, 11, 23, 34};
+		int temp = arr8[0];
+		arr8[0]= arr8[arr8.length -1];
+		arr8[arr8.length-1] =temp;
+		
+		for(int i =0; i<arr8.length; i++) {
+			System.out.print( arr8[i] + " " );
+		}
+		}
 	
 	
 	
@@ -185,9 +187,8 @@ public class HomeArray {
 	Create an array that includes an integer, 3 strings, and 1 double. 
 	Print the array.
 	 */
-	
-	
-	
+		Object[] arr = {5, "hello", "world", "Java", 33.3D}; 
+		System.out.println(Arrays.toString(arr));	
 	}
 	
 	
